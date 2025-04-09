@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sesana</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Sesana</h1>
+        <p>Bienvenido a Sesana, tu transcriptor de voz a texto preferido</p>
+    </div>
+    
+    <div class="container">
+        <label for="fileInput">📁 Seleccionar archivo</label>
+        <input type="file" id="fileInput" accept=".mp3, .wav, .m4a" required>
+        <button type="submit" onclick="uploadFile()" id="uploadButton">Upload</button>
+        <div id="loader" class="hidden">Transcribiendo...</div>           
+        <textarea id="transcript"></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
